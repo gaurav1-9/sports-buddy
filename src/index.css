@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --text-jaro: "Jaro", sans-serif;
+    --text-josefinSans: "Josefin Sans", sans-serif;
+
+    --color-foralWhite: #fffcf2;
+    --color-timberWolf: #ccc5b9;
+    --color-blackOlive: #403d39;
+    --color-eerieBlack: #252422;
+    --color-flame: #D89A16;
+}
+
+body{
+    background: var(--color-eerieBlack);
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3aa;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
