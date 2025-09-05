@@ -9,7 +9,7 @@ const Navbar = () => {
                     alt="logo"
                     draggable="false"
                 />
-                <div className="pt-4 lg:pt-2 flex flex-col justify-center items-center font-jaro text-foralWhite lg:text-4xl lg:ml-2">
+                <div className="pt-4 lg:pt-2 flex flex-col justify-center items-center font-jaro text-floralWhite lg:text-4xl lg:ml-2">
                     <p className='leading-1 lg:leading-4'>SPORTS</p>
                     <p>BUDDY</p>
                 </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
 
             <Link
                 to={'/login'}
-                className='bg-flame rounded-full px-4 lg:px-6 pt-2 pb-1 text-foralWhite font-josefinSans text-base lg:text-lg cursor-pointer hover:bg-flame/92 ease-in-out duration-200 hover:scale-[1.03]'
+                className='bg-flame rounded-full px-4 lg:px-6 pt-2 pb-1 text-floralWhite font-josefinSans text-base lg:text-lg cursor-pointer hover:bg-flame/92 ease-in-out duration-200 hover:scale-[1.03]'
             >
                 <p>LOGIN</p>
             </Link>
