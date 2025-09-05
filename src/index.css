@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme{
-    --text-jaro: "Jaro", sans-serif;
-    --text-josefinSans: "Josefin Sans", sans-serif;
+    --font-jaro: "Jaro", sans-serif;
+    --font-josefinSans: "Josefin Sans", sans-serif;
 
     --color-foralWhite: #fffcf2;
     --color-timberWolf: #ccc5b9;
