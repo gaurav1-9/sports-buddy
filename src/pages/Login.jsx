@@ -43,7 +43,7 @@ const Login = () => {
                 </div>
 
                 <button
-                    className="bg-flame rounded-full flex items-center p-0.5 mt-10 cursor-pointer hover:bg-flame/90"
+                    className="bg-flame rounded-full flex items-center p-0.5 mt-10 cursor-pointer ease-in-out duration-300 hover:scale-[1.01] hover:bg-flame/90"
                     onClick={() => console.log({ role, google: 'clickedBtn' })}
                 >
                     <FcGoogle className="bg-floralWhite rounded-full text-4xl lg:text-5xl p-1" />
