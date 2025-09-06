@@ -39,7 +39,7 @@ const EventLists = ({ events, joinEvent }) => {
                         </div>
 
                         <button
-                            className="absolute bottom-2 lg:bottom-3 right-3 bg-flame rounded-md px-6 py-2 font-bold"
+                            className="absolute bottom-2 lg:bottom-3 right-3 bg-flame rounded-md px-6 py-2 font-bold cursor-pointer hover:bg-flame/90 ease-in-out hover:scale-[1.03] duration-250"
                             onClick={() => joinEvent(event)}
                         >
                             JOIN

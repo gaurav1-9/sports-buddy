@@ -27,16 +27,21 @@ const SportEvents = () => {
         console.log(e)
     }
     return (
-        <div className='flex flex-col lg:flex-row scrollbar px-6 lg:px-[100px] pt-10 pb-3'>
+        <div className='flex flex-col lg:flex-row scrollbar px-6 lg:px-[100px] pt-0 pb-3'>
             <div className="lg:w-3/5">
-                <p className="font-jaro text-floralWhite text-3xl lg:text-5xl mb-8">
+                <p className="sticky top-15 lg:top-22 pt-7 pb-5 z-5 bg-eerieBlack font-jaro text-floralWhite text-3xl lg:text-5xl">
                     <span className="capitalize">{sportsCategory}</span> events
                 </p>
 
-                <EventLists events={events} joinEvent={joinEvent}/>
+                <EventLists events={events} joinEvent={joinEvent} />
             </div>
 
-            <div className="bg-yellow-700 lg:w-2/5"></div>
+            <div className="lg:w-2/5">
+                <div className="fixed top-30 z-40 flex flex-col w-full">
+                    <div className="h-1/2 bg-blue-300 w-full">s</div>
+                    <div className="h-1/2 bg-blue-500 w-full">s</div>
+                </div>
+            </div>
         </div>
     )
 }
