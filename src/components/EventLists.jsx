@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const EventLists = ({ events, joinEvent }) => {
     return (
-        <div className="w-full lg:pr-3 flex flex-col gap-2">
+        <div className="w-full flex flex-col gap-2">
             {
                 events.map((event, index) => (
                     <div

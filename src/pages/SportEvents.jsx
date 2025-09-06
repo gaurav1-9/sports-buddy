@@ -36,8 +36,8 @@ const SportEvents = () => {
                 <EventLists events={events} joinEvent={joinEvent} />
             </div>
 
-            <div className="lg:w-2/5">
-                <div className="fixed top-30 z-40 flex flex-col w-full">
+            <div className="mt-5 lg:fixed top-19 z-30 right-24 lg:w-2/6 lg:h-screen">
+                <div className="lg:mt-8 flex flex-col w-full h-8/11 gap-2 py-2.5">
                     <div className="h-1/2 bg-blue-300 w-full">s</div>
                     <div className="h-1/2 bg-blue-500 w-full">s</div>
                 </div>
