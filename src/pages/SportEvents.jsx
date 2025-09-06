@@ -1,3 +1,5 @@
+//add no events conditiions
+
 import { useParams } from "react-router-dom"
 import EventLists from "../components/EventLists"
 import PersonalEventDetails from "../components/PersonalEventDetails"
@@ -31,8 +33,24 @@ const SportEvents = () => {
             date: 'Sept 06, 2025',
             time: '05:30pm',
             userEmail: 'gauravkrdas19@gmail.com'
+        }
+    ]
+    const hostedEvents = [
+        {
+            name: "Evening Football Match",
+            location: 'Tezpur University',
+            date: 'Sept 06, 2025',
+            time: '05:30pm',
+            userEmail: 'gauravkrdas19@gmail.com'
         },
-
+        {
+            name: "16km Marathon",
+            location: 'Tezpur University',
+            date: 'Sept 08, 2025',
+            time: '05:30am',
+            peopleJoinded: 5,
+            userEmail: 'gauravkrdas19@gmail.com'
+        }
     ]
 
     const joinEvent = (e) => {
@@ -63,6 +81,7 @@ const SportEvents = () => {
                             joinedEvents={joinedEvents}
                             secondaryBg='bg-timberWolf'
                             secondaryText='text-eerieBlack'
+                            events={joinedEvents}
                         />
                     </div>
 
@@ -74,6 +93,7 @@ const SportEvents = () => {
                             joinedEvents={joinedEvents}
                             secondaryBg='bg-eerieBlack'
                             secondaryText='text-floralWhite'
+                            events={hostedEvents}
                         />
                         <div
                             className="flex justify-center items-center gap-1 px-3 cursor-pointer group mb-3"

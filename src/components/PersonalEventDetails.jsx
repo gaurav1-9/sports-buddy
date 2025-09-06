@@ -1,12 +1,12 @@
 import { FaCalendarAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 
-const PersonalEventDetails = ({ joinedEvents, secondaryBg, secondaryText }) => {
+const PersonalEventDetails = ({ events, secondaryBg, secondaryText }) => {
     return (
 
         <div className="mb-3 w-full flex flex-col gap-2">
             {
-                joinedEvents.map((event, index) => (
+                events.map((event, index) => (
                     <div
                         key={index}
                         className={`relative rounded-md ${secondaryBg} ${secondaryText} font-josefinSans p-2`}
