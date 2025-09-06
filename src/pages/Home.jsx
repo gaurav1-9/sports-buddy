@@ -5,7 +5,7 @@ const Home = () => {
     'football', 'basketball', 'skateboard', 'table-tennis', 'volleyball', 'cricket','badminton','tennis','boxing','swimming','cycling','running','hockey','snooker'
   ]
   return (
-    <div className='flex flex-col scrollbar justify-center items-center py-10'>
+    <div className='flex flex-col scrollbar justify-center items-center pt-10 pb-3'>
       <p className='font-jaro text-floralWhite text-3xl lg:text-5xl mb-15 lg:mb-20'>Choose your Sports</p>
 
       <SportsCategories sportsCategory={sportsCategory} />

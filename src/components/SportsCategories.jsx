@@ -10,7 +10,7 @@ const SportsCategories = ({sportsCategory}) => {
                         key={index}
                         className='flex flex-col justify-center items-center text-floralWhite font-jaro bg-blackOlive rounded-lg p-3 w-35 text-xl gap-3 lg:gap-4 cursor-pointer hover:bg-blackOlive/80 hover:scale-[1.03] ease-in-out duration-250'
                     >
-                        <img src={`/Sports Icons/${sport}.svg`} alt="" color="" />
+                        <img src={`/Sports Icons/${sport}.svg`} alt={sport} draggable="false" />
                         <p className='uppercase'>{sport}</p>
                     </Link>
                 ))
