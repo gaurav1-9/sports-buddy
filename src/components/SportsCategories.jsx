@@ -6,7 +6,7 @@ const SportsCategories = ({sportsCategory}) => {
             {
                 sportsCategory.map((sport, index) => (
                     <Link
-                        to={`/sport/${sport}`}
+                        to={`/sports/${sport}`}
                         key={index}
                         className='flex flex-col justify-center items-center text-floralWhite font-jaro bg-blackOlive rounded-lg p-3 w-35 text-xl gap-3 lg:gap-4 cursor-pointer hover:bg-blackOlive/80 hover:scale-[1.03] ease-in-out duration-250'
                     >

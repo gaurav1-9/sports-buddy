@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div className='sticky top-0 left-0 h-18 lg:h-24 w-full bg-blackOlive px-6 lg:px-[100px] flex justify-between items-center'>
+        <div className='sticky top-0 left-0 h-18 lg:h-24 w-full bg-blackOlive px-6 lg:px-[100px] flex justify-between items-center z-10'>
             <div className="flex h-full">
                 <img
                     src="/Logo_image.png"

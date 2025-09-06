@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Footer from "./components/Footer"
+import SportEvents from "./pages/SportEvents"
 
 const App = () => {
   const location = useLocation();
@@ -14,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
-          <Route path="/sports/:sportsCategory" element={<></>} />
+          <Route path='/sports/:sportsCategory' element={<SportEvents />} />
         </Routes>
       </main>
 
