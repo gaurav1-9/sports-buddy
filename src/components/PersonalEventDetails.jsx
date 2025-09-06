@@ -4,7 +4,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 const PersonalEventDetails = ({ joinedEvents, secondaryBg, secondaryText }) => {
     return (
 
-        <div className="w-full flex flex-col gap-2">
+        <div className="mb-3 w-full flex flex-col gap-2">
             {
                 joinedEvents.map((event, index) => (
                     <div

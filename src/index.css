@@ -33,3 +33,21 @@ body{
 .scrollbar::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+.scrollbar-dark::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: #2f2f2fdd;
+  border-radius: 10px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background-color: #2f2f2f;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background-color: transparent;
+}

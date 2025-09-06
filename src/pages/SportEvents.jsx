@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import EventLists from "../components/EventLists"
 import PersonalEventDetails from "../components/PersonalEventDetails"
+import { IoAddCircle } from "react-icons/io5";
 
 const SportEvents = () => {
     const { sportsCategory } = useParams()
@@ -31,17 +32,16 @@ const SportEvents = () => {
             time: '05:30pm',
             userEmail: 'gauravkrdas19@gmail.com'
         },
-        {
-            name: "16km Marathon",
-            location: 'Tezpur University',
-            date: 'Sept 08, 2025',
-            userEmail: 'gauravkrdas19@gmail.com'
-        }
+
     ]
 
     const joinEvent = (e) => {
         console.log(e)
     }
+    const addEvent = () => {
+        console.log("Add new event")
+    }
+
     return (
         <div className='flex flex-col lg:flex-row scrollbar px-6 lg:px-[100px] pt-0 pb-3'>
             <div className="lg:w-3/5">
@@ -68,13 +68,22 @@ const SportEvents = () => {
 
                     <div className={`max-h-60 lg:h-1/2 bg-flame w-full px-3 rounded-md overflow-y-scroll scrollbar-dark`}>
                         <p className={`sticky top-0 z-10 font-jaro bg-flame pt-3 pb-2 text-eerieBlack text-xl lg:text-2xl`}>
-                            Joined Events
+                            Your Events
                         </p>
                         <PersonalEventDetails
                             joinedEvents={joinedEvents}
                             secondaryBg='bg-eerieBlack'
                             secondaryText='text-floralWhite'
                         />
+                        <div
+                            className="flex justify-center items-center gap-1 px-3 cursor-pointer group mb-3"
+                            title="Add new event"
+                            onClick={addEvent}
+                        >
+                            <div className="flex-grow h-1 bg-eerieBlack group-hover:bg-eerieBlack/80 rounded-full"></div>
+                            <IoAddCircle className="text-5xl text-eerieBlack group-hover:text-eerieBlack/90" />
+                            <div className="flex-grow h-1 bg-eerieBlack group-hover:bg-eerieBlack/80 rounded-full"></div>
+                        </div>
                     </div>
                 </div>
             </div>
