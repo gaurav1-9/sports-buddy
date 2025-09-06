@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import EventLists from "../components/EventLists"
+import PersonalEventDetails from "../components/PersonalEventDetails"
 
 const SportEvents = () => {
     const { sportsCategory } = useParams()
@@ -22,6 +23,21 @@ const SportEvents = () => {
             userEmail: 'gauravkrdas19@gmail.com'
         }
     ]
+    const joinedEvents = [
+        {
+            name: "Evening Football Match",
+            location: 'Tezpur University',
+            date: 'Sept 06, 2025',
+            time: '05:30pm',
+            userEmail: 'gauravkrdas19@gmail.com'
+        },
+        {
+            name: "16km Marathon",
+            location: 'Tezpur University',
+            date: 'Sept 08, 2025',
+            userEmail: 'gauravkrdas19@gmail.com'
+        }
+    ]
 
     const joinEvent = (e) => {
         console.log(e)
@@ -37,9 +53,29 @@ const SportEvents = () => {
             </div>
 
             <div className="mt-5 lg:fixed top-19 z-30 right-24 lg:w-2/6 lg:h-screen">
-                <div className="lg:mt-8 flex flex-col w-full h-8/11 gap-2 py-2.5">
-                    <div className="h-1/2 bg-blue-300 w-full">s</div>
-                    <div className="h-1/2 bg-blue-500 w-full">s</div>
+                <div className="lg:mt-8 flex flex-col w-full lg:h-8/11 gap-3 py-2.5">
+
+                    <div className={`max-h-60 lg:h-1/2 bg-blackOlive w-full px-3 rounded-md overflow-y-scroll scrollbar`}>
+                        <p className={`sticky top-0 z-10 font-jaro bg-blackOlive pt-3 pb-2 text-floralWhite text-xl lg:text-2xl`}>
+                            Joined Events
+                        </p>
+                        <PersonalEventDetails
+                            joinedEvents={joinedEvents}
+                            secondaryBg='bg-timberWolf'
+                            secondaryText='text-eerieBlack'
+                        />
+                    </div>
+
+                    <div className={`max-h-60 lg:h-1/2 bg-flame w-full px-3 rounded-md overflow-y-scroll scrollbar-dark`}>
+                        <p className={`sticky top-0 z-10 font-jaro bg-flame pt-3 pb-2 text-eerieBlack text-xl lg:text-2xl`}>
+                            Joined Events
+                        </p>
+                        <PersonalEventDetails
+                            joinedEvents={joinedEvents}
+                            secondaryBg='bg-eerieBlack'
+                            secondaryText='text-floralWhite'
+                        />
+                    </div>
                 </div>
             </div>
         </div>
